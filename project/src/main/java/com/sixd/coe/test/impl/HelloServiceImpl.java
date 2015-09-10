@@ -1,4 +1,4 @@
-package com.sixd.coe.testt.impl;
+package com.sixd.coe.test.impl;
 
 import javax.jcr.Repository;
 

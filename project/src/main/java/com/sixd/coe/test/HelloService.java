@@ -1,4 +1,4 @@
-package com.sixd.coe.testt;
+package com.sixd.coe.test;
 
 /**
  * A simple service interface
