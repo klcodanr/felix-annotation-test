@@ -1,4 +1,4 @@
-package com.sixd.coe.testt.impl.servlets;
+package com.sixd.coe.test.impl.servlets;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sixd.coe.testt.HelloService;
+import com.sixd.coe.test.HelloService;
 
 /**
  * Simple servlet filter component that logs incoming requests.
@@ -31,6 +31,6 @@ public class HelloWorldServlet extends SlingSafeMethodsServlet {
 			SlingHttpServletResponse response) throws ServletException,
 			IOException {
 		log.trace("doGet");
-		response.getWriter().write(helloService.getRepositoryName());
+		response.getWriter().write(helloService.getRepositoryName() +"-ANNOTATION_VERSION-PLUGIN_VERSION");
 	}
 }

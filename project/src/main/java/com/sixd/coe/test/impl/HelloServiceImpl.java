@@ -7,7 +7,7 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.jcr.api.SlingRepository;
 
-import com.sixd.coe.testt.HelloService;
+import com.sixd.coe.test.HelloService;
 
 /**
  * One implementation of the {@link HelloService}. Note that

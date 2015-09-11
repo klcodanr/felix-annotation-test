@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.scr.annotations</artifactId>
-			<version>1.6.0</version>
+			<version>ANNOTATION_VERSION</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -118,7 +118,7 @@
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-scr-plugin</artifactId>
-				<version>1.7.4</version>
+				<version>PLUGIN_VERSION</version>
                 <executions>
                     <execution>
                         <id>generate-scr-descriptor</id>
@@ -127,6 +127,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                	<scanClasses>true</scanClasses>
+                </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
@@ -227,7 +230,7 @@
 											maven-scr-plugin
 										</artifactId>
 										<versionRange>
-											[1.7.4,)
+											[1.0.0,)
 										</versionRange>
 										<goals>
 											<goal>scr</goal>
